@@ -23,11 +23,11 @@ bool init_comunicacao_lora(void);
 void mqttCallback(char* topic, byte* payload, unsigned int length);
 void reconnectMQTT();
 
-const char* ssid = "your_wifi_ssid";
-const char* password = "your_wifi_password";
-const char* mqttServer = "your_mqtt_server_ip";
+const char* ssid = "Nome_da_Rede";
+const char* password = "senha_da_rede";
+const char* mqttServer = "ip_mqtt";
 const int mqttPort = 1883;
-const char* mqttTopic = "your_mqtt_topic";
+const char* mqttTopic = "topico";
 const char* mqttClientId = "ESP32Client";
 
 WiFiClient wifiClient;
